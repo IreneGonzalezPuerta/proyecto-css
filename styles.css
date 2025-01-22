@@ -146,42 +146,61 @@ input{
 .pp {
     padding: 5px;
 }
-.icons i{
-    padding: 10px 15px;
-    color: rgb(92, 92, 92);
-    text-align: center;
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+.row1 {
+    padding: 10px;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(79, 78, 78);
     font-size: 20px;
 }
-.piepag{
+.icons i{
+    padding: 0 30px;
+}
+.row2{
     display: flex;
     flex-direction: row;
     background-color: beige;
 }
-.piepag h2{
-    margin-bottom: 20px;
+.row2 h2{
     font-size: 14px;
+    padding: 20px 0 ;
 }
-.piepag div{
-    width: 33%;
+.row2 div{
     padding: 10px;
     margin:20px;
     border-radius: 5px;
     font-size: 14px;
 }
-.navigated li{
+.section1{
+    width: 40%;
+}
+.section2{
+    width: 30%;
+}
+.section2 div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.square{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    background-color: rgb(130, 130, 130);
+}
+.section3 li{
     list-style-type: none;
     color: grey;
 }
 
-.footer-section .photostream-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-sm);
-}
-.photo-item {
-    aspect-ratio: 1;
-    background-color: #bebdbd;
-}
+
 
 @media (max-width:750px) {
     h1{
@@ -192,7 +211,7 @@ input{
     }
     .nav li{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -204,12 +223,18 @@ input{
         flex-direction: column;
         width:90%;
     }
-    .piepag{
+    .row2 {
         display: flex;
         flex-direction: column;
     }
-    .piepag div{
-        width: 85%;
+    .section1{
+        width: 90%;
     }
+    .section2{
+        width: 90%;
+    }
+    .section3{
+        width: 90%;
+    }
+    
 
-}
